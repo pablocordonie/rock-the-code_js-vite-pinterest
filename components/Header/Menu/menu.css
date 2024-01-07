@@ -1,0 +1,6 @@
+.rtc-header--nav-menu {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+}

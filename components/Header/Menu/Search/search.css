@@ -1,0 +1,25 @@
+.rtc-header--nav-menu-search {
+  width: 20rem;
+}
+
+.rtc-header--nav-menu-search-form {
+  position: relative;
+  width: 100%;
+}
+
+.rtc-header--nav-menu-search-form-input {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: none;
+  border-radius: 1.5rem;
+  height: 3rem;
+  padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
+  width: 100%;
+}
+
+.rtc-header--nav-menu-search-form-input_svg {
+  position: absolute;
+  width: 20px;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}

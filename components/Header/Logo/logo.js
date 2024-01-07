@@ -3,10 +3,11 @@ import './logo.css'
 const renderLogo = () => {
     const logoDiv = document.createElement('div');
     logoDiv.setAttribute('id', 'logo');
+    logoDiv.className = 'rtc-header--nav-logo';
 
     const logoAnchor = document.createElement('a');
     logoAnchor.href = 'https://www.pinterest.es/';
-    logoAnchor.className = 'rtc-header--nav-logo';
+    logoAnchor.className = 'rtc-header--nav-logo-a';
     logoAnchor.target = '_blank';
     logoAnchor.ariaLabel = 'Entra a la página principal de Pinterest';
     logoAnchor.role = 'link';

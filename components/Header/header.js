@@ -1,3 +1,4 @@
+import './header.css'
 import renderLogo from './Logo/logo';
 import renderMenu from './Menu/menu';
 
