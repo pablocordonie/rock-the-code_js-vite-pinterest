@@ -1,15 +1,24 @@
 .rtc-header--nav-logo-a {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.25rem;
   height: 100%;
 }
 
 .rtc-header--nav-logo-svg {
   align-self: center;
+  fill: #e60023;
 }
 
 .rtc-header--nav-logo-h1 {
+  display: none;
   align-self: center;
   color: #cc0000;
   font-size: 1.25rem;
+  letter-spacing: -0.0625rem;
+}
+
+@media screen and (min-width: 350px) {
+  .rtc-header--nav-logo-h1 {
+    display: block;
+  }
 }

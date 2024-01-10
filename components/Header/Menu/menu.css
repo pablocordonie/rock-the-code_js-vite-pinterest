@@ -1,6 +1,11 @@
 .rtc-header--nav-menu {
   display: flex;
   align-items: center;
-  height: 100%;
-  gap: 1rem;
+  width: inherit;
+}
+
+.rtc-header--nav-menu_list {
+  display: flex;
+  justify-content: space-between;
+  width: inherit;
 }

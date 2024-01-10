@@ -1,0 +1,35 @@
+.rtc-header--nav-menu-desktop_search-form {
+  display: none;
+  position: relative;
+  width: 100%;
+}
+
+.rtc-header--nav-menu-desktop_search-form-input {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: none;
+  border-radius: 1.5rem;
+  color: #191919;
+  height: 3rem;
+  padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
+  width: 100%;
+}
+
+.rtc-header--nav-menu-desktop_search-form-input_svg {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  left: 38%;
+  top: 7.5%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rtc-header--nav-menu-desktop_search-form {
+    display: block;
+  }
+
+  .rtc-header--nav-menu-desktop_search-form-input_svg {
+    display: block;
+  }
+}

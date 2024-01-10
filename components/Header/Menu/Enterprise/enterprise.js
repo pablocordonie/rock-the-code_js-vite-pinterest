@@ -1,7 +1,8 @@
 import './enterprise.css'
+import userTemplate from '../User/user';
 
-const enterpriseTemplate = () => `
-    <li class="rtc-header--nav-menu-enterprise">
+const enterpriseAndUserTemplates = () => `
+    <li class="rtc-header--nav-menu-enterprise_user_lists">
         <ul class="rtc-header--nav-menu-enterprise_links">
             <li class="rtc-header--nav-menu-enterprise_item">
                 <a
@@ -29,7 +30,8 @@ const enterpriseTemplate = () => `
                     >Blog</a>
             </li>
         </ul>
+        ${userTemplate()}
     </li>
 `;
 
-export default enterpriseTemplate;
+export default enterpriseAndUserTemplates;

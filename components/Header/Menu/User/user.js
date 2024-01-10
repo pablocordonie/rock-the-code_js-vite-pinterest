@@ -1,13 +1,13 @@
 import './user.css'
 
 const userTemplate = () => `
-    <li class="rtc-header--nav-menu-user">
+    <div class="rtc-header--nav-menu-user">
         <img
             class="rtc-header--nav-menu-user-image"
-            src="#"
+            src="../../../../images/code-developer.png"
             alt="Imagen de usuario"
         >
-    </li>
+    </div>
 `;
 
 export default userTemplate;

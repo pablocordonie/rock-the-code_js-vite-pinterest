@@ -1,0 +1,11 @@
+.rtc-header--nav-menu-user {
+  height: 2rem;
+  width: 2rem;
+}
+
+.rtc-header--nav-menu-user-image {
+  background-color: #242424;
+  border-radius: 50%;
+  height: inherit;
+  width: inherit;
+}

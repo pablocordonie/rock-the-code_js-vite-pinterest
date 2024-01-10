@@ -1,6 +1,7 @@
 import './header.css'
 import renderLogo from './Logo/logo';
 import renderMenu from './Menu/menu';
+import renderSearch from './Search/search';
 
 const renderHeader = () => {
     const header = document.querySelector('#app > header');
@@ -10,7 +11,9 @@ const renderHeader = () => {
 
     nav.appendChild(renderLogo());
     nav.appendChild(renderMenu());
+
     header.appendChild(nav);
+    header.appendChild(renderSearch());
 
     return header;
 };

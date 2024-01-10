@@ -1,6 +1,6 @@
 .rtc-header--nav {
   display: flex;
+  gap: 1.5rem;
   height: 5rem;
-  gap: 1rem;
-  padding: 0 2rem 0 2rem;
+  width: 100%;
 }

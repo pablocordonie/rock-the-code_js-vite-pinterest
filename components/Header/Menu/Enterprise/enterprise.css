@@ -1,4 +1,16 @@
 .rtc-header--nav-menu-enterprise_links {
-  display: flex;
-  gap: 1.5rem;
+  display: none;
+}
+
+@media screen and (min-width: 540px) {
+  .rtc-header--nav-menu-enterprise_user_lists {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .rtc-header--nav-menu-enterprise_links {
+    display: flex;
+    gap: 1.5rem;
+  }
 }
