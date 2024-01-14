@@ -1,0 +1,24 @@
+main {
+  padding-bottom: 2rem;
+}
+
+.rtc-main--images_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.rtc-main--images-item-img {
+  border-radius: 2rem;
+  object-fit: cover;
+  height: 24rem;
+  width: 20rem;
+}
+
+@media screen and (min-width: 900px) {
+  .rtc-main--images-item-img {
+    height: 30rem;
+    width: 25rem;
+  }
+}
