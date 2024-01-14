@@ -1,6 +1,5 @@
-.rtc-header--nav-menu-desktop_search-form {
+.rtc-header--nav-menu-desktop_search {
   display: none;
-  position: relative;
   width: 100%;
 }
 
@@ -9,27 +8,43 @@
   border: none;
   border-radius: 1.5rem;
   color: #191919;
+  font-size: 0.9rem;
   height: 3rem;
   padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
-  width: 100%;
 }
 
 .rtc-header--nav-menu-desktop_search-form-input_svg {
   display: none;
   position: absolute;
   cursor: pointer;
-  left: 38%;
-  top: 7.5%;
+  left: 18.5rem;
+  top: 2.5rem;
   transform: translateY(-50%);
   width: 1.25rem;
 }
 
 @media screen and (min-width: 768px) {
-  .rtc-header--nav-menu-desktop_search-form {
-    display: block;
+  .rtc-header--nav-menu-desktop_search {
+    display: flex;
+    padding: 0 1rem;
+  }
+
+  .rtc-header--nav-menu-desktop_search > search,
+  .rtc-header--nav-menu-desktop_search-form-input {
+    width: 100%;
   }
 
   .rtc-header--nav-menu-desktop_search-form-input_svg {
     display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .rtc-header--nav-menu-desktop_search-form-input {
+    font-size: 1rem;
+  }
+
+  .rtc-header--nav-menu-desktop_search-form-input_svg {
+    left: 19.75rem;
   }
 }
