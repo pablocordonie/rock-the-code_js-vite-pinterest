@@ -7,9 +7,11 @@ const renderMain = async (key) => {
 
     const images = await fetch(`https://api.unsplash.com/photos/random?count=10&client_id=${key}`).then((res) => res.json()).then((res) => {
         console.log(res);
-        for (const image of res) {
+        for (let i = 0; i < res.length; i++) {
+            const image = res[i];
             const imgLi = document.createElement('li');
             imgLi.className = 'rtc-main--images-item';
+            imgLi.classList.add(`item-${i + 1}`);
 
             const img = document.createElement('img');
             img.src = `${image.urls.regular}`;

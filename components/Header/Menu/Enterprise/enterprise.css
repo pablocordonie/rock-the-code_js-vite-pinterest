@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 525px) {
+@media screen and (min-width: 550px) {
   .rtc-header--nav-menu-enterprise_user_lists {
     display: flex;
     align-items: center;
