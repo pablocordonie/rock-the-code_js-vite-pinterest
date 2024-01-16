@@ -1,0 +1,45 @@
+.rtc-footer--list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5rem 1.75rem;
+}
+
+.rtc-footer--list a {
+  font-size: 0.85rem;
+}
+
+.rtc-footer--list a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 400px) {
+  .rtc-footer--list {
+    align-items: center;
+    padding-left: 0;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .rtc-footer--list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .rtc-footer--list {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-bottom: 0;
+  }
+
+  .rtc-footer--list a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .rtc-footer--list {
+    gap: 0.5rem;
+  }
+}

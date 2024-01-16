@@ -4,6 +4,10 @@
   width: inherit;
 }
 
+.rtc-header--nav-menu a:hover {
+  text-decoration: underline;
+}
+
 .rtc-header--nav-menu_list {
   display: flex;
   justify-content: space-between;
