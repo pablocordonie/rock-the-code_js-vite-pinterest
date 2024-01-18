@@ -15,6 +15,7 @@ const renderMenu = () => {
             ${enterpriseAndUserTemplates()}
         </ul>
     `;
+
     return menuDiv;
 };
 

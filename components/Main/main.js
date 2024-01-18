@@ -5,8 +5,7 @@ const renderMain = async (key) => {
     const imagesList = document.createElement('ul');
     imagesList.className = 'rtc-main--images_list';
 
-    const images = await fetch(`https://api.unsplash.com/photos/random?count=10&client_id=${key}`).then((res) => res.json()).then((res) => {
-        console.log(res);
+    const images = await fetch(`https://api.unsplash.com/photos/random?count=10&orientation=landscape&client_id=${key}`).then((res) => res.json()).then((res) => {
         for (let i = 0; i < res.length; i++) {
             const image = res[i];
             const imgLi = document.createElement('li');

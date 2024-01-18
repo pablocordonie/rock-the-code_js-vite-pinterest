@@ -9,6 +9,7 @@
   border-radius: 1.5rem;
   color: #191919;
   height: 3rem;
+  outline: none;
   padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
   width: 100%;
 }
