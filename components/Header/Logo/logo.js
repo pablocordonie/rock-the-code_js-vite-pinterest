@@ -6,9 +6,8 @@ const renderLogo = () => {
     logoDiv.className = 'rtc-header--nav-logo';
 
     const logoAnchor = document.createElement('a');
-    logoAnchor.href = 'https://www.pinterest.es/';
+    logoAnchor.href = '/';
     logoAnchor.className = 'rtc-header--nav-logo-a';
-    logoAnchor.target = '_blank';
     logoAnchor.ariaLabel = 'Entra a la página principal de Pinterest';
     logoAnchor.role = 'link';
     logoAnchor.innerHTML += `
