@@ -7,24 +7,29 @@ const renderImagesByQuery = async (query, key) => {
 
     const newImages = await fetch(`https://api.unsplash.com/search/photos?query=${query}&client_id=${key}`).then((res) => res.json()).then((res) => {
         const imagesArray = res.results;
-        for (let i = 0; i < imagesArray.length; i++) {
-            const image = imagesArray[i];
-            const imgLi = document.createElement('li');
-            imgLi.className = 'rtc-main--images-item';
-            imgLi.classList.add(`item-${i + 1}`);
+        console.log(imagesArray);
+        if (!imagesArray.length) {
+            main.innerHTML += '<h3 class="rtc-main--no_images-h3">No se han encontrado las imágenes requeridas</h3>';
+        } else {
+            for (let i = 0; i < imagesArray.length; i++) {
+                const image = imagesArray[i];
+                const imgLi = document.createElement('li');
+                imgLi.className = 'rtc-main--images-item';
+                imgLi.classList.add(`item-${i + 1}`);
 
-            const img = document.createElement('img');
-            img.src = `${image.urls.regular}`;
-            img.alt = `${image.alt_description}`;
-            img.className = `rtc-main--${image.user.username}_img`;
-            img.classList.add('rtc-main--images-item-img');
-            img.setAttribute('loading', 'lazy');
+                const img = document.createElement('img');
+                img.src = `${image.urls.regular}`;
+                img.alt = `${image.alt_description}`;
+                img.className = `rtc-main--${image.user.username}_img`;
+                img.classList.add('rtc-main--images-item-img');
+                img.setAttribute('loading', 'lazy');
 
-            imgLi.appendChild(img);
-            imagesList.appendChild(imgLi);
-            main.appendChild(imagesList);
+                imgLi.appendChild(img);
+                imagesList.appendChild(imgLi);
+                main.appendChild(imagesList);
+            }
         }
-    }).catch(error => console.error('La petición ha fallado!', error));
+    }).catch(error => console.error('Revisa el siguiente error, puede que el límite de peticiones al servidor se haya sobrepasado -> ', error));
 
     return newImages;
 };

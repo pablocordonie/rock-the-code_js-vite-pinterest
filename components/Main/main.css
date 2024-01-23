@@ -2,6 +2,14 @@ main {
   padding-bottom: 2.5rem;
 }
 
+.rtc-main--no_images-h3 {
+  display: flex;
+  color: #cc0000;
+  font-size: 2rem;
+  justify-content: center;
+  padding: 25% 0 40% 0;
+}
+
 .rtc-main--images_list {
   display: flex;
   flex-wrap: wrap;
