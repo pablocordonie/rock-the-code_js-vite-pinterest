@@ -1,50 +1,52 @@
+@import '../../style.css';
+
 main {
-  padding-bottom: 2.5rem;
+  padding-bottom: var(--padding-main);
 }
 
 .rtc-main--no_images-h3 {
   display: flex;
-  color: #cc0000;
-  font-size: 2rem;
+  color: var(--tertiary-color);
+  font-size: var(--font-size-main);
   justify-content: center;
-  padding: 25% 0 40% 0;
+  padding: var(--padding-main-h3);
 }
 
 .rtc-main--images_list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2.5rem;
+  gap: var(--gap-main-images-s);
   justify-content: center;
 }
 
 .rtc-main--images-item-img {
-  border-radius: 1.5rem;
+  border-radius: var(--border-radius-main-img);
   object-fit: cover;
-  height: 20rem;
-  width: 14rem;
+  height: var(--height-main-img-xxs);
+  width: var(--width-main-img-xs);
 }
 
 @media screen and (min-width: 300px) {
   .rtc-main--images-item-img {
-    height: 22rem;
-    width: 16rem;
+    height: var(--height-main-img-xs);
+    width: var(--width-main-img-s);
   }
 }
 
 @media screen and (min-width: 350px) {
   .rtc-main--images_list {
-    gap: 3rem;
+    gap: var(--gap-main-images-m);
   }
 
   .rtc-main--images-item-img {
-    width: 18rem;
+    width: var(--width-main-img-m);
   }
 }
 
 @media screen and (min-width: 400px) {
   .rtc-main--images_list {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: var(--gap-main-grid-m);
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'item-1 item-1'
@@ -57,11 +59,11 @@ main {
   }
 
   .rtc-main--images-item {
-    width: 100%;
+    width: var(--width-main-img-l);
   }
 
   .rtc-main--images-item-img {
-    height: 16rem;
+    height: var(--height-main-img-s);
     width: inherit;
   }
 
@@ -108,13 +110,13 @@ main {
 
 @media screen and (min-width: 540px) {
   .rtc-main--images-item-img {
-    height: 20rem;
+    height: var(--height-main-img-m);
   }
 }
 
 @media screen and (min-width: 700px) {
   .rtc-main--images_list {
-    grid-gap: 1.5rem;
+    grid-gap: var(--gap-main-grid-l);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       'item-1 item-1 item-1'
@@ -128,13 +130,13 @@ main {
 
 @media screen and (min-width: 768px) {
   .rtc-main--images-item-img {
-    height: 24rem;
+    height: var(--height-main-img-l);
   }
 }
 
 @media screen and (min-width: 900px) {
   .rtc-main--images-item-img {
-    height: 32rem;
+    height: var(--height-main-img-xl);
   }
 }
 

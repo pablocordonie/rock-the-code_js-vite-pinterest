@@ -1,3 +1,5 @@
+@import '../../../../style.css';
+
 .rtc-header--nav-menu-enterprise_links {
   display: none;
 }
@@ -6,18 +8,18 @@
   .rtc-header--nav-menu-enterprise_user_lists {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--gap-header-enterprise-m);
   }
 
   .rtc-header--nav-menu-enterprise_links {
     display: flex;
-    gap: 1.5rem;
+    gap: var(--gap-header-enterprise-m);
   }
 }
 
 @media screen and (min-width: 900px) {
   .rtc-header--nav-menu-enterprise_links {
-    font-size: 1.1rem;
-    gap: 2rem;
+    font-size: var(--font-size-header-enterprise);
+    gap: var(--gap-header-enterprise-l);
   }
 }

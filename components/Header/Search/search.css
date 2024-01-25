@@ -1,26 +1,28 @@
+@import '../../../style.css';
+
 .rtc-header--nav-menu-search-form {
   position: relative;
-  width: 100%;
+  width: var(--width-header-search);
 }
 
 .rtc-header--nav-menu-search-form-input {
-  background-color: rgba(0, 0, 0, 0.13);
+  background-color: var(--secondary-input-background);
   border: none;
-  border-radius: 1.5rem;
-  color: #191919;
-  height: 3rem;
+  border-radius: var(--border-radius-header-search);
+  color: var(--secondary-color);
+  height: var(--height-header-search);
   outline: none;
-  padding: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
-  width: 100%;
+  padding: var(--padding-header-search-input);
+  width: var(--width-header-search);
 }
 
 .rtc-header--nav-menu-search-form-input_svg {
   position: absolute;
   cursor: pointer;
-  left: 0.75rem;
-  top: 50%;
+  left: var(--left-header-search-s);
+  top: var(--top-header-search-s);
   transform: translateY(-50%);
-  width: 1.25rem;
+  width: var(--width-header-search-svg);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,12 +1,105 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 600;
+  /* BORDER-RADIUS */
+  --border-radius-header-search: 1.5rem;
+  --border-radius-header-user-img: 50%;
+  --border-radius-main-img: 1.5rem;
 
-  background-color: #ffffff;
+  /* COLOR */
+  --primary-color: #ffffff;
+  --secondary-color: #191919;
+  --secondary-dark-color: #000000;
+  --secondary-input-background: #00000021;
+  --secondary-light-color: #242424;
+  --tertiary-color: #cc0000;
+  --tertiary-light-color: #e60023;
+
+  /* FONT-SIZE */
+  --font-size-footer-l: 0.8rem;
+  --font-size-footer-s: 0.85rem;
+  --font-size-header-enterprise: 1.1rem;
+  --font-size-header-logo-l: 1.4rem;
+  --font-size-header-logo-s: 1.25rem;
+  --font-size-header-search-l: 1rem;
+  --font-size-header-search-s: 0.9rem;
+  --font-size-header-today: 1.1rem;
+  --font-size-main: 2rem;
+
+  /* FONT-WEIGHT */
+  --font-weight: 600;
+
+  /* GAP */
+  --gap-footer-l: 0.3rem;
+  --gap-footer-xl: 0.5rem;
+  --gap-header-enterprise-l: 2rem;
+  --gap-header-enterprise-m: 1.5rem;
+  --gap-header-logo-a: 0.25rem;
+  --gap-header-nav: 1.5rem;
+  --gap-header-today: 1.5rem;
+  --gap-main-grid-l: 1.5rem;
+  --gap-main-grid-m: 1rem;
+  --gap-main-images-m: 3rem;
+  --gap-main-images-s: 2.5rem;
+
+  /* HEIGHT */
+  --height-header-logo: 100%;
+  --height-header-nav-m: 6rem;
+  --height-header-nav-s: 5rem;
+  --height-header-search: 3rem;
+  --height-header-user-l: 2.5rem;
+  --height-header-user-s: 2rem;
+  --height-main-img-l: 24rem;
+  --height-main-img-xl: 32rem;
+  --height-main-img-m: 20rem;
+  --height-main-img-s: 16rem;
+  --height-main-img-xs: 22rem;
+  --height-main-img-xxs: 20rem;
+
+  /* LETTER-SPACING */
+  --letter-spacing-header-logo: -0.0625rem;
+
+  /* LINE-HEIGHT */
+  --line-height: 1.5rem;
+
+  /* MARGIN */
+  --margin-m: 0 1rem;
+  --margin-s: 0 0.5rem;
+
+  /* PADDING */
+  --padding-footer-list: 0 0 1.5rem 1.75rem;
+  --padding-header-search: 0 1.5rem;
+  --padding-header-search-input: 0.9375rem 0.9375rem 0.9375rem 2.5rem;
+  --padding-header-l: 1.5rem;
+  --padding-header-m: 3rem;
+  --padding-header-s: 2.5rem;
+  --padding-main: 2.5rem;
+  --padding-main-h3: 25% 0 40% 0;
+
+  /* POSITION */
+  --left-header-search-l: 20.75rem;
+  --left-header-search-m: 19.4rem;
+  --left-header-search-s: 0.75rem;
+  --top-header-search-l: 3rem;
+  --top-header-search-m: 2.95rem;
+  --top-header-search-s: 50%;
+
+  /* WIDTH */
+  --width-header-nav: 100%;
+  --width-header-search: 100%;
+  --width-header-search-svg: 1.25rem;
+  --width-header-user-l: 2.5rem;
+  --width-header-user-s: 2rem;
+  --width-main-img-l: 100%;
+  --width-main-img-m: 18rem;
+  --width-main-img-s: 16rem;
+  --width-main-img-xs: 14rem;
+
+  background-color: var(--primary-color);
   color-scheme: light dark;
-  color: #242424;
-  margin: 0 0.5rem;
+  color: var(--secondary-light-color);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  margin: var(--margin-s);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,12 +119,12 @@ li {
 }
 
 a {
-  color: #000000;
+  color: var(--secondary-dark-color);
   text-decoration: none;
 }
 
 @media screen and (min-width: 350px) {
   :root {
-    margin: 0 1rem;
+    margin: var(--margin-m);
   }
 }

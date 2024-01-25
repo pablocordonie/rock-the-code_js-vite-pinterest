@@ -1,3 +1,5 @@
+@import '../../../../style.css';
+
 .rtc-header--nav-menu-trending {
   display: flex;
   align-items: center;
@@ -5,11 +7,11 @@
 
 .rtc-header--nav-menu-trending_links {
   display: flex;
-  gap: 1.5rem;
+  gap: var(--gap-header-today);
 }
 
 @media screen and (min-width: 900px) {
   .rtc-header--nav-menu-trending_links {
-    font-size: 1.1rem;
+    font-size: var(--font-size-header-today);
   }
 }

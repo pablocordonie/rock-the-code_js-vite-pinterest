@@ -1,18 +1,20 @@
+@import '../../../../style.css';
+
 .rtc-header--nav-menu-user {
-  height: 2rem;
-  width: 2rem;
+  height: var(--height-header-user-s);
+  width: var(--width-header-user-s);
 }
 
 .rtc-header--nav-menu-user-image {
-  background-color: #242424;
-  border-radius: 50%;
+  background-color: var(--secondary-light-color);
+  border-radius: var(--border-radius-header-user-img);
   height: inherit;
   width: inherit;
 }
 
 @media screen and (min-width: 900px) {
   .rtc-header--nav-menu-user {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: var(--height-header-user-l);
+    width: var(--width-header-user-l);
   }
 }

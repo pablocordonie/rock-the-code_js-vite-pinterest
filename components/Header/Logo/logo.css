@@ -1,20 +1,22 @@
+@import '../../../style.css';
+
 .rtc-header--nav-logo-a {
   display: flex;
-  gap: 0.25rem;
-  height: 100%;
+  gap: var(--gap-header-logo-a);
+  height: var(--height-header-logo);
 }
 
 .rtc-header--nav-logo-svg {
   align-self: center;
-  fill: #e60023;
+  fill: var(--tertiary-light-color);
 }
 
 .rtc-header--nav-logo-h1 {
   display: none;
   align-self: center;
-  color: #cc0000;
-  font-size: 1.25rem;
-  letter-spacing: -0.0625rem;
+  color: var(--tertiary-color);
+  font-size: var(--font-size-header-logo-s);
+  letter-spacing: var(--letter-spacing-header-logo);
 }
 
 @media screen and (min-width: 320px) {
@@ -25,6 +27,6 @@
 
 @media screen and (min-width: 900px) {
   .rtc-header--nav-logo-h1 {
-    font-size: 1.4rem;
+    font-size: var(--font-size-header-logo-l);
   }
 }
